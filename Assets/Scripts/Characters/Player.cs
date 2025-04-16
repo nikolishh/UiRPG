@@ -44,11 +44,11 @@ public class Player
             currentHealth = maxHealth;
     }
 
-    /*public void Attack(Enemy enemy)
+    public void Attack(Enemy enemy)
     {
         int totalDamage = currentWeapon != null ? currentWeapon.GetDamage() : 10;
         enemy.TakeDamage(totalDamage);
-    }*/
+    }
 
     public int GetHealth()
     {
