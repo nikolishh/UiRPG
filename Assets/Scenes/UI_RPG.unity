@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 2062475938}
-  EnemyHealthText: {fileID: 287637585}
+  enemyHealthText: {fileID: 287637585}
   weaponText: {fileID: 1279285986}
   attackButton: {fileID: 171997634}
   healButton: {fileID: 807942451}

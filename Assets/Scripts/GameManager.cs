@@ -6,7 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TMP_Text playerHealthText;
-    public TMP_Text EnemyHealthText;
+    public TMP_Text enemyHealthText;
     public TMP_Text weaponText;
     public Button attackButton;
     public Button healButton;
@@ -71,8 +71,9 @@ public class GameManager : MonoBehaviour
 
     void UpdateUI()
     {
-        playerHealthText.text = $"Your health: {player.GetHealth()}";
+        playerHealthText.text = $"HP: {player.GetHealth()}";
         weaponText.text = $"Weapon: {player.currentWeapon.weaponName}";
+        enemyHealthText.text = $"Enemy HP: {currentEnemy.GetHealth()}";
     }
 }
 

@@ -47,8 +47,12 @@ public class Player
     public void Attack(Enemy enemy)
     {
         int totalDamage = currentWeapon != null ? currentWeapon.GetDamage() : 10;
+        Debug.Log($"[Player Attack] Weapon: {currentWeapon.weaponName}, Damage: {totalDamage}");
+
         enemy.TakeDamage(totalDamage);
     }
+
+
 
     public int GetHealth()
     {
